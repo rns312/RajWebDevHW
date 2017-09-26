@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inline Block</title>
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		main, article {
+				background-color: rgba(0,0,255,0.2);
+				
+		}
+
+		main {
+
+			width: 900 px;
+			margin: 0 auto;
+			/*method 1 to remove margin from inline block, zero out font size in the wrapper element*/
+			/*font-size: 0px;*/
+			text-align: justify;
+		}
+
+		article {
+			width: 300px;
+			display: inline-block;
+			/*method 1 to remove margin from inline block, zero out font size in the wrapper element, but then define font size for child elements*/
+			/*font-size: 16px;*/
+			/*Method 2 - negative margin, will need to adjust for font size*/
+			margin-right:-4px;
+			border: 2px solid blue;
+			padding: 10px;
+			/*we could subtract the border from our 300px, 296px*/
+			/*width:296px;*/
+			/*box sizing border box means width is defined regardless of padding and border dimensions, but does not apply for margins*/
+			box-sizing: border-box;
+			/*margin: 10px;*/
+			/*still have to do math for margins*/
+			width: 280px;
+			margin: 10px 8px;
+
+		}
+	</style>	
+
+</head>
+<body>
+<main>
+
+	<article>1</article>
+	<article>2</article>
+	<article>3</article>
+
+</main>
+
+</body>
+</html>

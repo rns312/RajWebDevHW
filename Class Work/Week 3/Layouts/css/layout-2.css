@@ -1,0 +1,71 @@
+/*transparent blue background, and min height for all
+block elements to easily keep track of notes*/
+
+/*universal selector to remove default margins and padding from all elements*/
+/* {
+	margin:0;
+	padding:0;
+}*/
+
+body {
+	margin:0;
+	padding:0;
+	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+/*grouped selectors*/
+div, header, footer, main, article, aside, section {
+	min-height: 100px;
+	/*rgba color*/
+	background-color: rgba(0, 100, 255, .2);
+}
+
+main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*use a pseudo class selector to add block empty content with zero height that clears both sides
+this helps avoid or fix wrapping issues. we apply the clearfix to the wrapper/container element*/
+
+.clearfix::after{
+	display: block;
+	clear: both;
+	content: '';
+	/*to ensure backwards compatibility*/
+	height: 0;
+	font-size: 0;
+	/*one last fallback*/
+	visibility: hidden;
+	opacity: 0;
+}
+
+/*descendant selector for more css specificity*/
+
+article.col-pixels section{
+	/*960 pixel container - 6*10px margin*/
+	width: 300px;
+	margin:0 10px;
+	float:left;
+
+}
+
+/*Descendant selector again for more css specificity*/
+
+article.col-fluid section{
+	margin: 2.5%;
+	width: 20%;
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+

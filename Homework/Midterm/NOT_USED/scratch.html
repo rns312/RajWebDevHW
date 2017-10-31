@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		main {
+			width: 1024px;
+			margin: 0 auto;
+		}
+
+		section.row-1{
+			display: grid;
+			max-height: 500px;
+			grid-template-columns: 2fr 1fr;
+			grid-column-gap: 10px;
+			overflow: hidden;
+		}
+
+		div.img-wrapper {
+			overflow: hidden;
+			max-height: 500px;
+		}
+
+		img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<main>
+		<section class="row-1">
+			<div class="img-wrapper">
+				<img src="img/wildlife/bear3.jpg">
+			</div>
+			<div class="img-wrapper">
+				<img src="img/sports/ski1.jpg"/>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

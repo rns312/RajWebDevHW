@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rajin Suchdev Photography</title>
+
+	<link rel="stylesheet" type="text/css" href="css/layout2.css">
+</head>
+<body>
+
+<div class="hero-image">
+
+  <div class="hero-text">
+    <h1 id="title">RAJIN SUCHDEV</h1>
+  </div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <a class="home" href="home2.html">HOME</a>
+
+  <h2>GALLERIES</h2>
+  <a href="pages/Mech.html">Auto & Aviation</a>
+  <a href="pages/wildlife_gallery.html">Wildlife</a>
+  <a href="pages/nature.html">Nature</a>
+  <a href="Pages/sports.html">Sports</a>
+
+  <a class="about" href="pages/about.html">ABOUT</a>
+
+</div>
+
+<span onclick="openNav()"></span>
+
+<div id="main">
+</div>
+
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+var navBar = document.getElementById("mySidenav");
+var title = document.getElementById("title");
+function openNav() {
+
+    navBar.classList.add('open');
+    title.classList.add('collapse');
+}
+
+function closeNav() {
+     navBar.classList.remove('open');
+     title.classList.remove('collapse');    
+}
+</script>
+
+</body>
+</html>

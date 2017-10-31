@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+
+.sideimage {
+	width:33%;
+	display: inline-block;
+	margin-top: 100px;
+	margin-left: 100px;
+	position: absolute;
+
+
+}
+
+.sideimage img {
+	width:70%;
+}
+
+.description {
+	width:33%;
+/*	background-color: #222;*/
+	display: block;
+	margin:0 auto;
+	position: absolute;
+	left: 33%;
+	margin-top: 150px;
+	margin-left: 50px;
+
+}
+
+.description p {
+	font-family: 'Roboto', serif;
+/*	text-align: center;*/
+	font-size: 20px;
+  font-weight: 100;
+	color: #eaeaea;
+	margin: 0 auto;
+	padding: 20px;
+  padding-bottom: 0px;
+/*	opacity: .8;*/
+}
+
+.contact {
+	width:33%;
+	display: inline-block;
+	position: absolute;
+	left: 66%;
+	margin-top: 100px;
+	margin-left: 50px;
+
+}
+
+.contact h2 {
+	font-family: 'Roboto', serif;
+	font-size: 50px;
+  letter-spacing: 5px;
+  text-decoration: underline;
+	color: #eaeaea;
+	margin-left: 50px;
+  margin-bottom: 0px;
+	opacity: 1;
+}
+
+
+.contact h3 {
+  font-family: 'Roboto', serif;
+  font-size: 20px;
+  color: #eaeaea;
+  margin-left: 50px;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+  opacity: .5;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  background-color: #c5211e;
+  color: #111;
+  opacity: .7;
+}
+
+.sidenav h2 {
+    padding: 50px 8px 8px 25px;
+    font-family: 'open sans', serif;
+    text-decoration: none;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 50px;
+    font-family: 'open sans', serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+a.home {
+  padding-left: 25px;
+}
+
+a.about {
+  padding-left: 25px;
+  padding-top: 50px;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #c5211e;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav {
+  width:0px;
+}
+
+.sidenav.open {
+  width: 250px;
+}
+
+#title {
+  text-align: left;
+  margin-top: 0;
+  padding-left: 10%;
+/*  width: 100%;*/
+ /* transition: width 0.3s ease-in-out;*/
+}
+
+#title.collapse {
+  text-align: left;
+  padding-left: 10%;
+  width: 60%;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+span {
+  font-family: 'open sans', serif;
+  opacity: .5;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  color: #fff;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

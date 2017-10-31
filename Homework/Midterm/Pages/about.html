@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/about.css">
+
+<style>
+	body {
+		background-color: #1f2021;
+	}
+</style>
+
+</head>
+
+<body>
+
+	<div class="sideimage">
+		<img src="../img/about.jpg">
+	</div>
+
+
+
+	<div class="description">
+		<p> Hi, I'm Raj. I'm a photographer from New Hampshire, currently residing in New York City.</p>
+
+		<p>I shoot a wide variety of things ranging from nature and wildlife to action sports.</p>
+
+	</div>
+
+	<div class="contact">
+		<h2>CONTACT</h2>
+		<h3>rns312@nyu.edu</h3>
+		<h3> <a href="https://www.instagram.com/rajinsuchdev/">Instagram.com/rajinsuchdev</a></h3>
+		<h3> <a href="https://www.facebook.com/RNSMedia/">Facebook.com/RNSMedia</a></h3>
+
+	</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <a class="home" href="../home2.html">HOME</a>
+
+  <h2>GALLERIES </h2>
+  <a href="Mech.html">Auto & Aviation</a>
+  <a href="wildlife_gallery.html">Wildlife</a>
+  <a href="nature.html">Nature</a>
+  <a href="sports.html">Sports</a>
+
+  <a class="about" href="about.html">ABOUT</a>
+
+</div>
+
+
+<span onclick="openNav()"></span>
+
+<div id="main">
+</div>
+
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+var navBar = document.getElementById("mySidenav");
+var title = document.getElementById("title");
+function openNav() {
+
+    navBar.classList.add('open');
+    title.classList.add('collapse');
+}
+
+function closeNav() {
+     navBar.classList.remove('open');
+     title.classList.remove('collapse');    
+}
+</script>
+
+</body>
+</html>

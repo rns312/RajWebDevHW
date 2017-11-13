@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wildlife</title>
+
+	<link rel="stylesheet" type="text/css" href="wildlifegallerylayout.css">
+
+<style>
+	body {
+		background-color: #1f2021;
+	}
+</style>
+
+</head>
+<body>
+
+	<header>
+
+	<div class="hero-text">
+		<h1>WILDLIFE</h1>
+	<div class="hero-text">
+
+	</header>
+
+<div class="container">
+
+	
+		<div class="row1">
+			<img src="wildlife/bear3.jpg" onclick="openModal()"/>
+		</div>
+
+		<div class="row1">
+			<img src="wildlife/bear4.jpg"/>
+		</div>
+
+		<div class="row1">
+			<img src="wildlife/bear5.jpg"/>
+		</div>
+
+		<div class="row1">
+			<img src="wildlife/bear1.jpg"/>
+		</div>
+
+		<div class="row1">
+			<img src="wildlife/bear2.jpg"/>
+		</div>
+
+	<!-- Row 2 -->
+
+		<div class="row2">
+			<img src="wildlife/bear6.jpg"/>
+		</div>
+
+		<div class="row2">
+			<img src="wildlife/bear7.jpg"/>
+		</div>
+
+		<div class="row2">
+			<img src="wildlife/bear8.jpg"/>
+		</div>
+
+
+		<!-- Row 3 -->
+
+		<div class="row4">
+			<img src="wildlife/orca.jpg"/>
+		</div>
+
+		<div class="row4">
+			<img src="wildlife/whale1.jpg"/>
+		</div>
+
+		<div class="row4">
+			<img src="wildlife/whale2.jpg"/>
+		</div>
+
+		<!-- Row 4 -->
+
+		<div class="row3">
+			<img src="wildlife/babybear.jpg"/>
+		</div>
+
+		<div class="row3">
+			<img src="wildlife/eagle1.jpg"/>
+		</div>
+
+		<div class="row3">
+			<img src="wildlife/eagle2.jpg"/>
+		</div>
+
+		<div class="row3">
+			<img src="wildlife/lynx.jpg"/>
+		</div>
+
+		<div class="row3">
+			<img src="wildlife/bird.jpg"/>
+		</div>
+
+	
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <a class="home" href="../home2.html">HOME</a>
+  
+  <h2>Galleries</h2>
+  <a href="Mech.html">Auto & Aviation</a>
+  <a href="wildlife_gallery.html">Wildlife</a>
+  <a href="nature.html">Nature</a>
+  <a href="sports.html">Sports</a>
+
+   <a class="about" href="about.html">ABOUT</a>
+</div>
+
+
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"></span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+
+</div>
+</div>
+
+<div id="modal">
+	<div class="modalImage">
+		<img src="wildlife/bear3_.jpg" onclick="closeModal()"/>
+	</div>
+</div>
+
+<!-- <div class="modal">
+	<div class="modalImage">
+		<img src="wildlife/bear4_.jpg" onclick="closeModal()"/>
+	</div>
+</div> -->
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+// Modal JS
+
+var modal1 = document.getElementById("modal");
+
+function openModal() {
+    modal1.style.display = 'block';
+}
+
+function closeModal() {
+    modal1.style.display = 'none';
+}
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//        modal.style.display = 'none';
+//     }
+// }
+
+</script>
+	
+
+</div>
+
+
+
+</body>
+</html>

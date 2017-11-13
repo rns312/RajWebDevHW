@@ -189,6 +189,29 @@ span {
 
 }
 
+
+#modal{
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  width: 30%;
+  height: 30%;
+  margin:0 auto;
+
+}
+.modalImage {
+
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  margin:-67% -26.6%;
+
+}
+
+.modalImage img {
+  height: 800px;
+
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

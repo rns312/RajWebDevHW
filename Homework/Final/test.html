@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- change data-src to match your image files, these could be thumbnails instead of buttons -->
+<img type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-src="img/Mech/b-25-1.jpg" src="img/Mech/b-25-1.jpg">
+<img type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-src="img/Mech/ba2_.jpg" src="img/mech/ba2.jpg">
+<img type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-src="img/Mech/ba1_.jpg" src="img/Mech/ba1.jpg">
+
+<!-- make sure id here matches data-target on buttons -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">File Name: </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<!-- have a default image loaded -->
+        <img src="http://via.placeholder.com/640x480" class="img-fluid" id="gallery"/>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- load bootstrap scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- open modal via jquery -->
+<script type="text/javascript">
+	$('#imageModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var source = button.data('src') // Extract info from data-* attributes
+  var modal = $(this)
+  modal.find('.modal-title').text('New file: ' + source)
+  var image = $('#gallery')
+  image.attr("src",source)
+})
+</script>
+
+</body>
+</html>

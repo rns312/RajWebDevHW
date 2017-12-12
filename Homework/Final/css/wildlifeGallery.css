@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400');
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#navbardrop {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 0;
+}
+
+.nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 0;
+}
+
+/*.navbar-nav {
+    position: absolute;
+    left: 70%;
+}*/
+
+.dropdown-item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+#myCarousel {
+    height: 50px;
+}
+
+.carousel-inner{
+    margin:0 auto;
+    width:700px;
+}
+.carousel-item {
+    height: auto;
+}
+
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    font-weight: 100;
+/*  padding: .5rem 1rem;*/
+    padding-top: 20px;
+    text-align: center;
+}
+
+.imageContainer {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.imageRow {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imageRow img {
+    background-color: grey;
+    width: 22%;
+    margin:1%;
+    
+}
+
+.imageRow img:hover {
+    opacity: .6;
+    cursor: pointer;
+
+}
+
+#imageModal {
+  margin: 0 auto;
+}
+
+
+.modal-body {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.modal-dialog {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 10000px;
+}
+
+/*.modalContent button {
+    left: 90%;
+}*/

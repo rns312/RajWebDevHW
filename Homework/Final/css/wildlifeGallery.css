@@ -66,10 +66,10 @@ h2 {
 
 }
 
-.imageRow {
+/*.imageRow {
     width: 100%;
     margin: 0 auto;
-}
+}*/
 
 .imageRow img {
     background-color: grey;

@@ -78,7 +78,7 @@
 }
 
 .contactInfo {
-	width: 500px;
+	width: 1000px;
 	height: 750px;
 	margin: 0 auto;
 }
@@ -102,6 +102,37 @@
 	text-align: center;
 	text-decoration: none;
 }
+
+.contactContainer {
+	width: 90%;
+	margin: 0 auto;
+}
+.contactRow {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contactStuff {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.contactStuff h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: 200; 
+	margin-bottom: 2px;
+}
+
+.contactStuff p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 200; 
+	margin-top: 0px;
+}
+
 
 
 /*.aboutImage {
